@@ -1,0 +1,20 @@
+{
+  "name": "md-review",
+  "version": "1.0.0",
+  "description": "Markdown文档协作评审平台",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "node server.js",
+    "client": "cd client && npm run dev",
+    "build": "cd client && npm install && cd client && npm install && npm run build",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.0",
+    "multer": "^1.4.5-lts.1",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.0"
+  }
+}
